@@ -15,8 +15,14 @@
         <!-- MetisMenu CSS -->
         <link href="../css/metisMenu.min.css" rel="stylesheet">
 
+        <!-- Timeline CSS -->
+        <link href="../css/timeline.css" rel="stylesheet">
+
         <!-- Custom CSS -->
         <link href="../css/startmin.css" rel="stylesheet">
+
+        <!-- Morris Charts CSS -->
+        <link href="../css/morris.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
         <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -149,75 +155,96 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Compte</h1>
+                            <h1 class="page-header">Contacter l'administrateur</h1>
+                            <p>
+                                <h4>Si vous rencontrer des difficultés le l'on de votre parcours utilisateur au sein de cette platform, prière de contacter l'administrateur, et lui addresser toutes vos difficultés, et une solution vous serez proposer dans quelques instant.</h4>
+                                <h4>Si pour une raison ou une autre vous souhaitez proposer des fonctionnalités dans le but d'améliorer encore d'avantage la présente plateforme, prière de le suggère à l'administrateur du site.</h4>
+                            </p>
                         </div>
                         <!-- /.col-lg-12 -->
                     </div>
-                    <!-- /.row -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3>Paramètrer mon compte</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="col-lg-12">
-                                <h4>Desciption du compte</h4>
-                                <p>
-                                    Vous utilisez un compte <strong>ETUDIANT</strong> ce type de compte ne vous permet pas de publier sur le site d'Elmes...<br />
-                                    Mais il vous permet de lire des articles publiés sur la plateforme d'Elmes, d'achètés les ouvrages et de faire des calculs numérique.<br />
-                                    Dans la mésure où vous souhaiter changer de compte, c'est à dire quitter du compte <strong>ETUDIANT</strong> au compte <strong>ENSEIGNANT</strong>, il faut cliquer sur le bouton <strong>Changer de compte</strong> et au préalable remplir le formulaire de changement de compte.
-                                </p>
-                                <br>
-                                <p>
-                                    Vous utilisez un compte <strong>ENSEIGNANT</strong> ce type de compte vous permet publier sur le site d'Elmes, de faire des calculs numérique...<br />
-                                    Mais il ne vous permet pas d'achèter les ouvrages publiés sur la plateforme d'Elmes.<br />
-                                    Dans la mésure où vous souhaiter changer de compte, c'est à dire quitter du compte <strong>ENSEIGNANT</strong> au compte <strong>ETUDIANT</strong>, il faut cliquer sur le bouton <strong>Changer de compte</strong> et au préalable remplir le formulaire de changement de compte.
-                                </p>
-                                <br>
-                            </div>
-                            <!-- /.col-lg-12 -->
-                            <div class="col-lg-6">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        Changement de compte
-                                    </div>
-                                    <!-- /.panel-heading -->
-                                    <div class="panel-body">
-                                        <form role="form" method="POST" action="">
-                                            <div class="form-group">
-                                                <label>Pourquoi changez vous de compte ?</label>
-                                                <textarea class="form-control" rows="3" name="motivation"></textarea>
-                                            </div>
-                                            <input type="submit" class="btn btn-success" name="changer" value="Changer de compte" />
-                                        </form>
-                                    </div>
-                                    <!-- /.panel-body -->
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-clock-o fa-fw"></i> Historique des conversations
                                 </div>
-                                <!-- /.panel -->
-                            </div>
-                            <!-- /.col-lg-6 -->
-                            <div class="col-lg-6">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        Suppression de compte
-                                    </div>
-                                    <!-- /.panel-heading -->
-                                    <div class="panel-body">
-                                        <form role="form" method="POST" action="">
-                                            <div class="form-group">
-                                                <label>Pourquoi supprimez vous votre compte ?</label>
-                                                <textarea class="form-control" rows="3" name="motivation"></textarea>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <ul class="timeline">
+                                        <li>
+                                            <div class="timeline-badge warning"><i class="fa fa-user"></i>
                                             </div>
-                                            <input type="submit" class="btn btn-danger" name="supprimer" value="Clôturez mon compte" />
-                                        </form>
-                                    </div>
-                                    <!-- /.panel-body -->
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
+
+                                                    <p>
+                                                        <small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via
+                                                            Twitter
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                                                        laboriosam
+                                                        dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est
+                                                        cum
+                                                        veniam excepturi. Maiores praesentium, porro voluptas suscipit facere
+                                                        rem
+                                                        dicta, debitis.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-inverted">
+                                            <div class="timeline-badge info"><i class="fa fa-user-secret"></i>
+                                            </div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+                                                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
+
+                                                    <p>
+                                                        <small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via
+                                                            Twitter
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                                                        laboriosam
+                                                        dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est
+                                                        cum
+                                                        veniam excepturi. Maiores praesentium, porro voluptas suscipit facere
+                                                        rem
+                                                        dicta, debitis.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
+                                <!-- /.panel-body -->
                             </div>
-                            <!-- /.col-lg-6 -->
+                            <!-- /.panel -->
                         </div>
-                        <!-- /.panel-body -->
+                        <div class="col-lg-4">
+                            <div class="chat-panel panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-comments fa-fw"></i>
+                                    Chat
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-footer">
+                                    <textarea id="btn-input" type="text" class="form-control input-sm">Ecrivez votre message, ici...
+                                    </textarea>
+                                    <br />
+                                    <input class="btn btn-warning btn-sm" id="btn-chat" name="envoyer" value="Envoyer">
+                                </div>
+                                <!-- /.panel-footer -->
+                            </div>
+                            <!-- /.panel .chat-panel -->
+                        </div>
+                        <!-- /.col-lg-4 -->
                     </div>
-                    <!-- /.panel -->
                 </div>
                 <!-- /.container-fluid -->
             </div>
@@ -234,6 +261,11 @@
 
         <!-- Metis Menu Plugin JavaScript -->
         <script src="../js/metisMenu.min.js"></script>
+
+        <!-- Morris Charts JavaScript -->
+        <script src="../js/raphael.min.js"></script>
+        <script src="../js/morris.min.js"></script>
+        <script src="../js/morris-data.js"></script>
 
         <!-- Custom Theme JavaScript -->
         <script src="../js/startmin.js"></script>
