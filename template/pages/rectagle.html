@@ -152,92 +152,83 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Tableau de bord</h1>
+                            <h1 class="page-header">Méthode de Rectangle</h1>
                         </div>
                         <!-- /.col-lg-12 -->
                     </div>
                     <!-- /.row -->
                     <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-12 text-right">
-                                            <div class="huge">26</div>
-                                            <div>Intégrales resolues</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="integrale.html">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">Résoudre une intégrale</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
+                        <div class="col-lg-12">
+                            <div class="jumbotron">
+                                <h2>Consigne</h2>
+                                <hr>
+                                <p>Pour calculer numériquement un intégrale par la méthode du Réctangle, il faut disposer des éléments suivants :</p>
+                                <ol>
+                                    <li>De la borne inférieur (notée ici <em>a</em>)</li>
+                                    <li>De la borne supérieur (notée ici <em>b</em>)</li>
+                                    <li>De le la fonction (notée ici <em>f</em>)</li>
+                                    <li>Du nombre de subdivision (notée ici <em>n</em>)</li>
+                                </ol>
+                                <p>Après avoir insérer les données, il ne vous restera plus que l'action de valider en appuyant sur le bouton Calcul.<br />
+                                Le calcul se fera en utilisant la variante rectange à gauche...
+                                </p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-green">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-12 text-right">
-                                            <div class="huge">12</div>
-                                            <div>Equations diffréntielles resolues</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="edo.html">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">Résoudre une équation</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-yellow">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-12 text-right">
-                                            <div class="huge">124</div>
-                                            <div>Réponses harmonique obtenues </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="automatique.htm">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">Obtenir la réponse</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="panel panel-red">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-12 text-right">
-                                            <div class="huge">13</div>
-                                            <div>Matrices resolues</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="matrice.hyml">
-                                    <div class="panel-footer">
-                                        <span class="pull-left">Calculer une matrice</span>
-                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <!-- /.col-lg-12 -->
                     </div>
+                    <!-- /.row -->
+                    <div class="row">
+                        <form method="POST" action="" role="form">
+                            <div class="col-sm-3">
+                                <div class="hero-widget well well-sm">
+                                    <div class="text">
+                                        <span class="value"><em>a</em></span>
+                                        <label class="text-muted">borne inférieur</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="a" placeholder="Entrer la valeur de a">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="hero-widget well well-sm">
+                                    <div class="text">
+                                        <span class="value"><em>b</em></span>
+                                        <label class="text-muted">borne supérieur</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="b" placeholder="Entrer la valeur de b">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="hero-widget well well-sm">
+                                    <div class="text">
+                                        <span class="value"><em>f</em></span>
+                                        <label class="text-muted">fonction</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="f" placeholder="Entrer la valeur de f">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="hero-widget well well-sm">
+                                    <div class="text">
+                                        <span class="value"><em>n</em></span>
+                                        <label class="text-muted">nombre des subdivisions</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" name="n" placeholder="Entrer la valeur de n">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <input class="btn btn-danger" name="valider" type="submit" value="Calculer">
+                            </div>
+                        </form>
+                    </div>
+                                <br>
                     <!-- /.row -->
                     <div class="row">
                         <div class="col-lg-8">
