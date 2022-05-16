@@ -156,6 +156,53 @@
                     <!-- /.row -->
                     <div class="row">
                         <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            Pill Tabs
+                                        </div>
+                                        <!-- /.panel-heading -->
+                                        <div class="panel-body">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-pills">
+                                                <li class="active"><a href="#home-pills" data-toggle="tab">Home</a>
+                                                </li>
+                                                <li><a href="#profile-pills" data-toggle="tab">Profile</a>
+                                                </li>
+                                                <li><a href="#messages-pills" data-toggle="tab">Messages</a>
+                                                </li>
+                                                <li><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                                </li>
+                                            </ul>
+
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in active" id="home-pills">
+                                                    <h4>Home Tab</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="profile-pills">
+                                                    <h4>Profile Tab</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="messages-pills">
+                                                    <h4>Messages Tab</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="settings-pills">
+                                                    <h4>Settings Tab</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.panel-body -->
+                                    </div>
+                                    <!-- /.panel -->
+                                </div>
+                                <!-- /.col-lg-6 -->
+                            </div>
+                            <!-- /.row -->                            
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3>Modifier mes informations</h3>
@@ -165,55 +212,52 @@
                                         <div class="col-lg-12">
                                             <form role="form" enctype="multipart/form-data" method="POST" action="">
                                                 <div class="form-group">
-                                                    <label>Mon Avatar</label>
-                                                    <input type="file">
+                                                  <label for="formFile" class="form-label">Mon avatar</label>
+                                                  <input class="form-control" name="avatar" type="file" id="formFile">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Mon nom</label>
-                                                    <input class="form-control" placeholder="Lisongo">
+                                                    <input class="form-control" name="nom" placeholder="Lisongo">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Mon post-nom</label>
-                                                    <input class="form-control" placeholder="Semete">
+                                                    <input class="form-control" name="postnom" placeholder="Semete">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Mon prénom</label>
-                                                    <input class="form-control" placeholder="Gabriel">
+                                                    <input class="form-control" name="prenom" placeholder="Gabriel">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Sexe</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" name="sexe">
                                                         <option value="M" active>Masculin</option>
                                                         <option value="F">Féminin</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Lieu de naissance</label>
-                                                    <input class="form-control" placeholder="Ilebo">
-                                                </div>
-                                                <div class="form-group">
                                                     <label>Date de naissance</label>
-                                                    <input type="date"class="form-control">
+                                                    <input type="date"class="form-control" name="date_naiss">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Nationalité</label>
-                                                    <input class="form-control" placeholder="Congolaise">
+                                                    <input class="form-control" name="nationalite" placeholder="Congolaise">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Adresse</label>
-                                                    <input name="adresse" class="form-control" placeholder="98 Busudjanoa ONL/Kasa-vubu Kinshasa/RDC">
+                                                    <input name="addresse" class="form-control" placeholder="98 Busudjanoa ONL/Kasa-vubu Kinshasa/RDC">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Téléphone</label>
-                                                    <input type="tel" class="form-control" placeholder="00243899469745">
+                                                    <input type="tel" name="telephone" class="form-control" placeholder="00243899469745">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Adresse mail</label>
+                                                    <input type="email" name="telephone" class="form-control">
                                                     <p class="form-control-static">email@example.com</p>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Pseudo(Identifian utilisateur)</label>
-                                                    <input class="form-control" placeholder="galias">
+                                                    <input class="form-control" name="pseudo" placeholder="galias">
                                                 </div>
                                                 <div class="form-group">
                                                     <a class="form-control" type="btn btn-danger" href="reinit_pass.html">Changer le mot de passe</a>
