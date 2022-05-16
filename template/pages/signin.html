@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Startmin - Bootstrap Admin Theme</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- MetisMenu CSS -->
+        <link href="../css/metisMenu.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="../css/startmin.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <form role="form" method="POST" action="">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                 <h1>Mes identités</h1>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Mon nom</label>
+                                            <input class="form-control" name="nom" required>
+                                            <p class="help-block">Exemple Lisongo</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Mon Prénom</label>
+                                            <input class="form-control" name="prenom" required>
+                                            <p class="help-block">Exemple Gaby</p>
+                                        </div>
+                                    </div>
+                                    <!-- /.col-lg-6 (nested) -->
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Mon post - nom</label>
+                                            <input class="form-control" name="postnom" required>
+                                            <p class="help-block">Exemple Semete</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Mon sexe</label>
+                                            <select class="form-control" name="sexe" required>
+                                                <option value="M" active>Masculin</option>
+                                                <option value="F">Féminin</option>
+                                            </select>
+                                            <p class="help-block">Exemple je suis un homme, Masculin</p>
+                                        </div>
+                                    </div>
+                                    <!-- /.col-lg-6 (nested) -->
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                 <h1>Mes informations d'authentification</h1>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Mon pseudo</label>
+                                            <input class="form-control" name="pseudo" required>
+                                            <p class="help-block">Exemple galias</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Mon mot de passe</label>
+                                            <input type="password" class="form-control" name="pass" required>
+                                            <p class="help-block">Entrez votre mot de passe, au minimum 5 caractères</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Je m'enregistre en tant que...</label>
+                                            <select class="form-control" name="sexe" required>
+                                                <option value="Client" active>Etudiant</option>
+                                                <option value="Auteur">Enseignant</option>
+                                            </select>
+                                            <p class="help-block">Détermine le type de compte que vous voulez</p>
+                                            </div>
+                                    </div>
+                                    <!-- /.col-lg-6 (nested) -->
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Mon addresse email</label>
+                                            <input type="email" class="form-control" name="email" required>
+                                            <p class="help-block">Exemple glbkisongo@mail.com</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Confirmer le mot de passe</label>
+                                            <input type="password" class="form-control" name="cpass" required>
+                                            <p class="help-block">Rentrer de nouveau le mot de passe</p>
+                                        </div>
+                                    </div>
+                                    <!-- /.col-lg-6 (nested) -->
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Je crée mon compte" name="valider" />
+                        </div>
+                        <div class="form-group">
+                            <a type="submit" class="btn btn-danger" href="login.html">J'ai déjà un compte</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="../js/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../js/bootstrap.min.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="../js/metisMenu.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="../js/startmin.js"></script>
+
+    </body>
+</html>
