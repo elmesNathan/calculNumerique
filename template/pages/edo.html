@@ -34,7 +34,6 @@
     <body>
 
         <div id="wrapper">
-
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
@@ -152,11 +151,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Méthode de Trapèze</h1>
+                            <h1 class="page-header">Equation Différentielle Ordinaire</h1>
                         </div>
-                        <!-- /.col-lg-12 -->
                     </div>
-                    <!-- /.row -->
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="jumbotron">
@@ -164,18 +161,17 @@
                                 <hr>
                                 <p>Pour calculer numériquement un intégrale par la méthode du Réctangle, il faut disposer des éléments suivants :</p>
                                 <ol>
-                                    <li>De la borne inférieur (notée ici <em>a</em>)</li>
-                                    <li>De la borne supérieur (notée ici <em>b</em>)</li>
-                                    <li>De le la fonction (notée ici <em>f</em>)</li>
+                                    <li>De la intérvalle à gauche (notée ici <em>a</em>)</li>
+                                    <li>De la intervalle à droite (notée ici <em>b</em>)</li>
+                                    <li>De f(x,y) (notée ici <em>f</em>)</li>
                                     <li>Du nombre de subdivision (notée ici <em>n</em>)</li>
+                                    <li>Et enfin l'ordre de l'équation</li>
                                 </ol>
                                 <p>Après avoir insérer les données, il ne vous restera plus que l'action de valider en appuyant sur le bouton Calcul.<br />
-                                </p>
+                                </p>       
                             </div>
                         </div>
-                        <!-- /.col-lg-12 -->
                     </div>
-                    <!-- /.row -->
                     <div class="row">
                         <form method="POST" action="" role="form">
                             <div class="col-sm-3">
@@ -185,7 +181,7 @@
                                         <label class="text-muted">borne inférieur</label>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" name="a" placeholder="Entrer la valeur de a">
+                                        <input class="form-control" name="a" placeholder="Entrer la valeur de a" />
                                     </div>
                                 </div>
                             </div>
@@ -222,56 +218,53 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <input class="btn btn-danger form-control" name="valider" type="submit" value="Calculer">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option value="1" selected>Odre 1</option>
+                                        <option value="2">Odre 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="btn btn-danger form-control" name="valider" type="submit" value="Calculer" />
+                                </div>
                             </div>
                         </form>
                     </div>
-                                <br>
-                    <!-- /.row -->
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <i class="fa fa-bar-chart-o fa-fw"></i> Graphique du dernier calcul
                                 </div>
-                                <!-- /.panel-heading -->
                                 <div class="panel-body">
                                     <canvas id="myChart"></canvas>
                                 </div>
-                                <!-- /.panel-body -->
                             </div>
-                            <!-- /.panel -->
                         </div>
-                        <!-- /.col-lg-8 -->
                         <div class="col-lg-4">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <i class="fa fa-tasks fa-fw"></i> Paramètres
                                 </div>
-                                <!-- /.panel-heading -->
                                 <div class="panel-body">
                                     <div class="list-group">
                                         <a href="#" class="list-group-item">
                                             <i class="fa fa-cog fa-fw"></i> Titre paramètre
-                                                <span class="pull-right text-muted small"><em>Valeur paramètre</em>
-                                                </span>
+                                            <span class="pull-right text-muted small"><em>Valeur paramètre</em>
+                                            </span>
                                         </a>
                                     </div>
-                                    <!-- /.list-group -->
                                 </div>
-                                <!-- /.panel-body -->
                             </div>
-                            <!-- /.panel -->
                         </div>
-                        <!-- /.col-lg-4 -->
                     </div>
-                    <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
             </div>
             <!-- /#page-wrapper -->
-
         </div>
         <!-- /#wrapper -->
 
